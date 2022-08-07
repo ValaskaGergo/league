@@ -1,0 +1,24 @@
+<p>league works!</p>
+
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+          <th>Date/Time</th>
+          <th>Stadium</th>
+          <th>Home Team</th>
+          <th>Away Team</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let match of matches">
+        <td>{{ match.matchDate }}</td>
+        <td>{{ match.stadium }}</td>
+        <td>{{ match.homeTeam }}</td>
+        <td>{{ match.awayTeam }}</td>
+        <td>{{ match.matchPlayed }}</td>
+        <td>{{ match.homeTeamScore }}</td>
+        <td>{{ match.awayTeamScore }}</td>
+      </tr>
+    </tbody>
+</table>
